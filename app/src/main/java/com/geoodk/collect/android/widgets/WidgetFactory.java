@@ -88,6 +88,9 @@ public class WidgetFactory {
                     case Constants.DATATYPE_LAI:
                         questionWidget = new LAIWidget(context, fep);
                         break;
+                    case Constants.DATATYPE_LAIMEASURE:
+                        questionWidget = new LAIMeasureWidget(context, fep);
+                        break;
                     case Constants.DATATYPE_TEXT:
                     	String query = fep.getQuestion().getAdditionalAttribute(null, "query");
                         if (query != null) {
