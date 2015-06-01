@@ -61,7 +61,7 @@ public class LAIMeasureWidget extends QuestionWidget implements IBinaryWidget {
 					Collect.getInstance().getFormController()
 							.setIndexWaitingForData(mPrompt.getIndex());
 					((Activity) getContext()).startActivityForResult(i,
-							FormEntryActivity.LAI_MEASURE);
+							FormEntryActivity.LAI_FROM_CAMEARAVIEW);
 				} catch (ActivityNotFoundException e) {
 					Toast.makeText(
 							getContext(),
