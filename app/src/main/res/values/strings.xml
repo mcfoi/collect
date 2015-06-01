@@ -107,6 +107,7 @@
     <string name="main_menu_details">Data collection made easier&#8230;</string>
     <string name="manage_files">Delete Saved Form</string>
     <string name="mark_finished">Mark form as finalized</string>
+    <string name="measure_lai">Measure LAI</string>
     <string name="noselect_error">Sorry, you have not selected any forms!</string>
     <string name="no_connection">No network connection available</string>
     <string name="no_items_display">Nothing available to display.</string>
@@ -124,6 +125,7 @@
     <string name="quit_application">Exit %s</string>
     <string name="quit_entry">Save Form and Exit</string>
     <string name="refresh">Refresh</string>
+    <string name="remeasure_lai">Remeasure LAI</string>
     <string name="replace_barcode">Replace Barcode</string>
     <string name="replace_lai">Replace LAI</string>
     <string name="replace_location">Replace Location</string>
