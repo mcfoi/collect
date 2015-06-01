@@ -62,7 +62,7 @@ public class LAIWidget extends QuestionWidget implements IBinaryWidget {
 					Collect.getInstance().getFormController()
 							.setIndexWaitingForData(mPrompt.getIndex());
 					((Activity) getContext()).startActivityForResult(i,
-							FormEntryActivity.LAI_CAPTURE);
+							FormEntryActivity.LAI_FROM_DATATABLE);
 				} catch (ActivityNotFoundException e) {
 					Toast.makeText(
 							getContext(),
