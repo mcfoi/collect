@@ -149,8 +149,8 @@ public class FormEntryActivity extends Activity implements AnimationListener,
     public static final int GEOTRACE_CAPTURE = 20;
 
 	// Custom Intent Request Codes for Pocket LAI
-	public static final int LAI_CAPTURE = 1024; //for getting Data from Pocket LAI Data Table
-	public static final int LAI_MEASURE = 1025; //for getting Data from Pocket LAI Camera View
+	public static final int LAI_FROM_DATATABLE = 991; //for getting Data from Pocket LAI Data Table
+	public static final int LAI_FROM_CAMEARAVIEW = 992; //for getting Data from Pocket LAI Camera View
 
 	// Extra returned from gp activity
 	public static final String LOCATION_RESULT = "LOCATION_RESULT";
@@ -592,7 +592,14 @@ public class FormEntryActivity extends Activity implements AnimationListener,
 			((ODKView) mCurrentView).setBinaryData(sb);
 			saveAnswersForCurrentScreen(DO_NOT_EVALUATE_CONSTRAINTS);
 			break;
-		case LAI_CAPTURE:
+		case LAI_FROM_DATATABLE:
+			if (resultCode == Activity.RESULT_OK){
+				String laiString = intent.getStringExtra("eu.marcofoi.android.PocketLAI.LAI");
+				((ODKView) mCurrentView).setBinaryData(laiString);
+				saveAnswersForCurrentScreen(DO_NOT_EVALUATE_CONSTRAINTS);
+			}
+			break;
+		case LAI_FROM_CAMEARAVIEW:
 			if (resultCode == Activity.RESULT_OK){
 				String laiString = intent.getStringExtra("eu.marcofoi.android.PocketLAI.LAI");
 				((ODKView) mCurrentView).setBinaryData(laiString);
