@@ -93,7 +93,7 @@
     <string name="jump_to_beginning">Go To Start</string>
     <string name="jump_to_end">Go To End</string>
     <string name="jump_to_previous">Go Up</string>
-    <string name="lai_application_error">Sorry, Pocket LAI is not installed!</string>
+    <string name="lai_application_error">Sorry, PocketLAI for IRRI is not installed!</string>
     <string name="latitude">Latitude</string>
     <string name="leave_repeat_yes">Do Not Add</string>
     <string name="leaving_repeat_ask">Add One More Group?</string>
