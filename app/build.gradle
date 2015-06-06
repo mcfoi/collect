@@ -1,20 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    signingConfigs {
         releaseConfig {
             keyAlias 'irrigeoodkcollect25years'
             keyPassword 'keygreen'
-            storeFile file('C:/Users/mcfoi/Dropbox/_mcfoi.keystore.txt')
+            storeFile file('C:/Users/mcfoi/Dropbox/_mcfoi_andstudio.keystore.txt')
             storePassword 'KeyGreen1974'
         }
     }
+    compileSdkVersion 21
     buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId "com.geoodk.collect.android"
         minSdkVersion 9
         targetSdkVersion 9
-        versionCode 171
+        versionCode 172
         versionName "1.7.2"
         archivesBaseName = "IRRI_GeoODK_Collect"
     }
