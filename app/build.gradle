@@ -9,7 +9,7 @@ android {
             storePassword 'KeyGreen1974'
         }
     }
-    compileSdkVersion 21
+    compileSdkVersion 22
     buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId "com.geoodk.collect.android"
