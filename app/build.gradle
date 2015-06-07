@@ -15,8 +15,8 @@ android {
         applicationId "com.geoodk.collect.android"
         minSdkVersion 9
         targetSdkVersion 21
-        versionCode 172
-        versionName "1.7.2"
+        versionCode 174
+        versionName "1.7.4"
         archivesBaseName = "IRRI_GeoODK_Collect"
     }
     buildTypes {
