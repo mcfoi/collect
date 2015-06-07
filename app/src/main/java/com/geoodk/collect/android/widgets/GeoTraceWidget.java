@@ -135,25 +135,27 @@ public class GeoTraceWidget extends QuestionWidget implements IBinaryWidget {
 
 	@Override
 	public IAnswerData getAnswer() {
-//		ArrayList<double[]> list = new ArrayList<double[]>();
+		ArrayList<double[]> list = new ArrayList<double[]>();
 		String s = mStringAnswer.getText().toString();
 		if (s == null || s.equals("")) {
 			return null;
 		} else {
 			try {
-//				String[] sa = s.split(";");
-//				for (int i=0;i<sa.length;i++){
-//					String[] sp = sa[i].split(" ");
-//					double gp[] = new double[4];
-//					gp[0] = Double.parseDouble(sp[0]);
-//					gp[1] = Double.parseDouble(sp[1]);
-//					gp[2] = Double.parseDouble(sp[2]);
-//					gp[3] = Double.parseDouble(sp[3]);
-//					list.add(gp);
-//				}
-
+				String[] sa = s.split(";");
+				for (int i=0;i<sa.length;i++){
+					String[] sp = sa[i].trim().split(" ");
+					double gp[] = new double[4];
+					gp[0] = Double.valueOf(sp[0]).doubleValue();
+					gp[1] = Double.valueOf(sp[1]).doubleValue();
+					gp[2] = Double.valueOf(sp[2]).doubleValue();
+					gp[3] = Double.valueOf(sp[3]).doubleValue();
+					list.add(gp);
+				}
+				GeoShape shape = new GeoShape(list);
+				//return new GeoShapeData(shape);
 				return new StringData(s);
 			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 				return null;
 			}
